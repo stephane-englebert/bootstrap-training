@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    
+    <title>Document</title>
+    <style>
+        .ctnp{
+            background-color:  #cda5f3;
+            border:3px solid black;
+            border-radius: 5px;
+            margin:10px;
+        }
+        .ctn{
+            background-color: #cda5f3;
+            border:2px solid black;
+            border-radius: 5px;
+        }
+        .ctntxt{
+            background-color: #cda5f3;
+        }
+        .pad5{
+            padding:5px;
+        }
+        .fwbd{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="col col-md-12 padding:20px;margin-left:30px;">
+            <h2>I - Blocs positioning</h2>
+            <div class="row text-center ctnp">
+                <div class="col-12 col-md-12 pad5 ctntxt">12 colonnes</div>
+                <div class="col col-md-2 offset-md-1 ctn pad5">Coucou</div>
+                <div class="col col-md-3 offset-md-2 ctn pad5">ça</div>
+                <div class="col col-md-2 offset-md-2 ctn pad5">va ?</div>
+            </div>
+        </section>
+        <section>
+            <h2>II - Imbricated elements</h2>
+            <div class="row text-center" style="margin:10px;">
+                <div class="col col-md-4">
+                    <div class="row col col-md-12 ctn pad5">Nouvel</div>
+                </div>
+                <div class="col col-md-8 ctn">
+                    <div class="row text-center">
+                        <div class="col col-md-12 pad5 fwbd">Exercice</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col col-md-3 ctn pad5">ces</div>
+                        <div class="col col-md-6 ctn pad5">blocs sont tous</div>
+                        <div class="col col-md-3 ctn pad5">dans</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col col-md-4 ctn pad5">la même</div>
+                        <div class="col col-md-4 ctn pad5">div où est</div>
+                        <div class="col col-md-4 ctn pad5">inscrit "<span class="fwbd">Exercice</span>".</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col col-md-5 ctn pad5">comment</div>
+                        <div class="col col-md-2 ctn pad5">est</div>
+                        <div class="col col-md-5 ctn pad5">ce possible ?</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>III - Change elements order</h2>
+            <div class="row text-center ctnp" style="margin:10px;">
+                <div class="row text-center">
+                    <div class="col-12 col-md-12 pad5 ctntxt">12 colonnes</div>
+                </div>
+                <div class="row text-center d-flex justify-content-around flex-nowrap">
+                    <div class="col col-md-2 ctn pad5 order-1">Bloc 1 de 2</div>
+                    <div class="col col-md-2 ctn pad5 order-3">Bloc 2 de 2</div>
+                    <div class="col col-md-2 ctn pad5 order-2">Bloc 3 de 2</div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <h2>IV - Pratice makes good</h2>
+        </section>
+        <section>
+            <h2>V - Responsive layout...</h2>
+        </section>
+        <form method="post" action="aaa">
+            <div class="form-group">
+                <label for="my-input">Text</label>
+                <input id="my-input" class="form-control" type="text" name="">
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>
